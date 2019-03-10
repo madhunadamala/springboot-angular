@@ -8,14 +8,14 @@ import { AppComponent } from './app.component';
 import { BikeService } from './services/bike.service';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
-import { ViewRgistrationComponent } from './components/view-rgistration/view-rgistration.component';
+import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     HomeComponent,
-    ViewRgistrationComponent
+    ViewRegistrationComponent
   ],
   imports: [
     BrowserModule,

@@ -3,11 +3,11 @@ import { BikeService } from '../../services/bike.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-view-rgistration',
-  templateUrl: './view-rgistration.component.html',
-  styleUrls: ['./view-rgistration.component.css']
+  selector: 'app-view-registration',
+  templateUrl: './view-registration.component.html',
+  styleUrls: ['./view-registration.component.css']
 })
-export class ViewRgistrationComponent implements OnInit {
+export class ViewRegistrationComponent implements OnInit {
 
   public bikeReg;
   constructor(private bikeService: BikeService, private route: ActivatedRoute) { }
