@@ -9,22 +9,21 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ViewRegistrationComponent implements OnInit {
 
-  public bikeReg;
-  constructor(private bikeService: BikeService, private route: ActivatedRoute) { }
+  public bikeReg: any;
+  constructor(public bikeService: BikeService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.getBikeReg(this.route.snapshot.params.id);
   }
 
-getBikeReg(id: number) {
-  this.bikeService.getBike(id).subscribe(
-    data => {
-      this.bikeReg = data;
-    },
-    err => console.error(err),
-    () => console.log('bikes loaded')
-  );
-}
+  getBikeReg(id: number) {
+    this.bikeService.getBike(id).subscribe(
+      data => {
+        this.bikeReg = data;
+      },
+      err => console.error(err),
+      () => console.log('bikes loaded')
+    );
+  }
 
 }
-
